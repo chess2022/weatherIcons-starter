@@ -10,7 +10,7 @@ export default function App() {
   })
   return (
     <div className="App">
-       { allWeatherData }
+      <section>{allWeatherData}</section>
     </div>
   );
 }

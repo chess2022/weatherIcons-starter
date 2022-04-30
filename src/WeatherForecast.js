@@ -2,7 +2,6 @@ import React from "react";
 
 export default function WeatherForecast(props) {
     return (
-      <section>
         <div className="weather">
           <img src={props.img} />
           <p>
@@ -14,7 +13,6 @@ export default function WeatherForecast(props) {
             {props.time}
           </p>
         </div>
-      </section>
     );
 }
 
