@@ -1,18 +1,13 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
+import WeatherData from "./WeatherData";
 
 export default function WeatherForecast(props) {
     return (
-        <div className="weather">
-          <img src={props.img} />
-          <p>
-            <span>conditions: </span>
-            {props.conditions}
-          </p>
-          <p>
-            <span>time: </span>
-            {props.time}
-          </p>
-        </div>
+      <div className="weather">
+        <WeatherIcon img={props.img}/>
+        <WeatherData conditions={props.conditions} time={props.time}/>
+      </div>
     );
 }
 
